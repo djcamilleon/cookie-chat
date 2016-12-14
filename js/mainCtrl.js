@@ -20,8 +20,11 @@ $scope.getMessage();
   //then post it to the backend.
 
   $scope.postMessage = function(message){
+    //get promise, wait for it to finish
     messageService.postMessage(message).then
     (function(response){
+      //do stuff with data
+
       $scope.getMessage();
     })
 

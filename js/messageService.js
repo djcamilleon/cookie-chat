@@ -7,6 +7,7 @@ angular.module('chatroom').service('messageService', function($http){
   //The url for the get request should be 'http://practiceapi.devmounta.in/api/chats'
   //Be sure to return whatever gets returned from $http so you can call .then in your controller.
   this.getMessage = function(){
+    //
     var promiseGet = $http({
       method: 'GET',
       url: 'https://practiceapi.devmounta.in/api/chats'
